@@ -16,9 +16,8 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  width: 1440px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -37,10 +36,58 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 700, 400;
 }
 
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 70px;
+}
+
+/* Header */
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+header nav {
+  align-self: center;
+  justify-self: end;
+}
+
+.section1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section1-text {
+  align-self: center;
+}
+
+.section1-image > img {
+  width: 100%;
+}
+
+.section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section2-text {
+  align-self: center;
+}
+
+.section2-image > img {
+  width: 100%;
+}
 
 footer {
   display: grid;
