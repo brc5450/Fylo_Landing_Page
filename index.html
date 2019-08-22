@@ -85,7 +85,6 @@
 
 
       <section class="section-3">
-        <div class="section3">
         <div class="section3-text">
           <h2>Get early access today</h2>
           <p>
@@ -97,29 +96,46 @@
         <div class="section3-form">
           <form action="Post">
             <input type="email" placeholder="email.example.com" />
-          </form>
+          </form><br>
           <a href="#" class="btn">Get Started For Free</a>
         </div>
-      </div>
       </section>
     </div>
+
+
     <footer>
-      <img src="/images/logo.svg" alt="footer-logo" />
-      <img src="/images/icon-phone.svg" alt="phone" />
-      <p>Phone: +1-543-123-4567</p>
-      <img src="/images/icon-email.svg" alt="email" />
-      <p>example@fylo.com</p>
-      <p>About Us Jobs Press Blog Contact Us Terms Privacy</p>
+      <div class="footer-content">
+      <img src="/images/logo.svg" alt="footer-logo"  class="footer-logo" />
+
+      <div class="col-1">
+        <img src="/images/icon-phone.svg" alt="phone" style="float: left" class="phone" />
+        <p>Phone: +1-543-123-4567</p>
+          <img src="/images/icon-email.svg" alt="email" style="float: left" class="email" />
+          <p class="email-address">example@fylo.com</p>
+      </div>
+      
+<div class="col-2">
+      <p class="about-us">About Us</p>
+      <p class="jobs">Jobs</p>
+      <p class="press">Press</p> 
+      <p class="blog">Blog</p>
+    </div>
+
+    <div class="col-3">
+      <p class="contact-us">Contact Us</p>
+      <p class="terms">Terms</p>
+      <p class="privacy">Privacy</p>
+    </div>
+
+    <div class="col-4">
+      <div class="social">
       <i class="fab fa-facebook-f"></i>
       <i class="fab fa-twitter"></i>
       <i class="fab fa-instagram"></i>
-      <p class="attribution">
-        This page started life as a challenge on
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >
-        🎉
-      </p>
+    </div>
+  </div>
+    </div>
+
     </footer>
   </body>
 </html>

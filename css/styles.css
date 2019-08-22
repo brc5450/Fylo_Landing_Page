@@ -23,12 +23,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, auto);
-
-  /* grid-template-areas: "header header "
-    "section1-text section1-text section1-image section1-image"
-    "section2-text section2-text section2-image section2-image"
-    "section3-text section3-text section3-image section3-image"
-    "footer footer footer footer footer" */
 }
 
 h1,
@@ -69,6 +63,7 @@ header nav {
 .section1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 6rem;
   margin-top: 75px;
   padding: 25px 75px;
 }
@@ -86,15 +81,16 @@ input {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
 }
 
-a.btn {
+.btn {
   background-color: var(--Bright-Blue);
   border: none;
   color: white;
-  padding: 13px 32px;
+  padding: 13px 50px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
 }
 
 .section1-image > img {
@@ -112,6 +108,7 @@ a.btn {
 .section2 {
   background-color: var(--Light-Grayish-Blue);
   margin-top: -5px;
+  padding-bottom: 50px;
 }
 
 .section2-container {
@@ -162,13 +159,30 @@ a.btn {
 
 .section-3 {
   background-color: var(--Desaturated-Blue);
-}
-
-.section3 {
+  height: 275px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "heading form ";
+  grid-gap: 2rem;
   padding: 20px 75px;
   color: #fff;
+}
+
+.section3-text {
+  grid-area: "heading";
+  align-self: center;
+  justify-content: center;
+}
+
+.section3-form {
+  grid-area: "form";
+  align-self: center;
+  justify-content: center;
+}
+
+.section3-form input {
+  width: 90%;
 }
 
 .section3 h2 {
@@ -176,7 +190,20 @@ a.btn {
 }
 
 footer {
+  padding: 75px;
+  background-color: var(--Very-Dark-Blue);
+}
+
+.footer-content {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  color: #fff;
+}
+
+.footer-logo {
+  grid-area: "footer-logo";
+  grid-column: 1/5;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(155deg)
+    brightness(106%) contrast(101%);
 }
